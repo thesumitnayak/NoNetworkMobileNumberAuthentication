@@ -1,10 +1,12 @@
 import { useState, useEffect } from "react";
-import {Container, Card, CardContent, makeStyles, Grid, TextField, Button} from '@material-ui/core';
-import InputAdornment from "@material-ui/core/InputAdornment";
+import { Container, Card, CardContent, Grid, TextField, Button } from '@mui/material';
+import InputAdornment from '@mui/material/InputAdornment';
 import QRCode from 'qrcode';
 import validator from "validator";
 import emailjs, { send } from "@emailjs/browser";
 import React, { useRef} from 'react';
+import { makeStyles } from '@mui/styles';
+
 
 function App() {
   const classes = useStyles();
